@@ -1,3 +1,53 @@
 :host {
   width: 100%;
 }
+
+.about{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.about__image, .about__content{
+  width: 50%;
+}
+
+.about__image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__content{
+  width: 50%;
+  padding: 0 5rem;
+  text-align: left;
+  text-wrap: balance;
+
+  font-size: 1.5rem;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.about__title{
+  font-size: 2.5rem;
+  text-align: left;
+  text-wrap: balance;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+
+@media (max-width: 550px) {
+  .about {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about__image, .about__content{
+    width: 100%;
+  }
+}
