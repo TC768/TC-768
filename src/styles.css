@@ -1,5 +1,5 @@
 :root{
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   --color-primary: #F2F2F2;
   --color-secondary: #000;
 
@@ -95,9 +95,25 @@ form, input, select, textarea, button, label {
 
 html {
   font-size: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 body{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+.container
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
