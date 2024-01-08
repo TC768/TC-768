@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FooterComponent } from '../footer/footer.component';
-import { NavFalsoComponent } from '../nav-falso/nav-falso.component';
+import { FooterComponent } from '../../components/footer/footer.component';
+import { NavFalsoComponent } from '../../components/nav-falso/nav-falso.component';
 
 @Component({
   selector: 'app-about',
