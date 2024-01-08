@@ -3,7 +3,12 @@
 
   <main class="about">
     <div class="about__image">
-      <img src="" alt="Hola" class="about__image-content">
+
+      @defer {
+        <img src="" alt="sd" class="about__image-content">
+      } @placeholder {
+        <span class="spinner"></span>
+      }
     </div>
     <div class="about__content">
       <h1 class="about__title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
