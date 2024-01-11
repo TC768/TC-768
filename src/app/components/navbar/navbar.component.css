@@ -1,6 +1,6 @@
 .navbar {
   position: relative;
-  background-color: #ffffff; /* Fondo blanco */
+  background-color: #ffffff;
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -9,24 +9,24 @@
 }
 
 .navbar-logo img {
-  max-height: 40px; /* Ajusta la altura según tu diseño */
-  margin-left: 50px; /* Ajusta el margen según tu diseño */
+  max-height: 40px;
+  margin-left: 50px;
 }
 
 .navbar-links a {
   text-decoration: none;
-  color: #333333; /* Color del texto */
+  color: #333333;
   margin: 0 15px;
   cursor: pointer;
 }
 
 .navbar-links a:hover {
-  font-weight: bold; /* Otra apariencia para el texto al pasar el mouse */
+  font-weight: bold; /* Apariencia para el texto al pasar el mouse */
   transition: background-color 0.5s;
 }
 
 .active-link {
-  font-weight: bold; /* Otra apariencia para la opción seleccionada */
+  font-weight: bold; /* Apariencia para la opción seleccionada */
 }
 
 /* Estilo adicional para cuando el navbar esté fijado en la parte superior */
@@ -38,7 +38,7 @@
   z-index: 1000;
 }
 
-/* Estilos para la versión móvil (puedes usar @media queries para mayor control) */
+/* Estilos para la versión móvil */
 @media (max-width: 768px) {
   .navbar-links {
     display: none;
