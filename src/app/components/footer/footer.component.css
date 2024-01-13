@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 
-.footer__title{
+.footer__title {
   font-size: 1.2rem;
 }
 
@@ -33,7 +33,7 @@
   cursor: pointer;
 }
 
-.footer__info{
+.footer__info {
   width: 100%;
   display: flex;
   align-items: center;
@@ -42,22 +42,24 @@
   padding-top: 1rem;
 }
 
-.footer__content{
+.footer__content {
   display: flex;
   align-items: start;
   justify-content: space-between;
 }
 
-.footer__social{
+.footer__social {
   flex-basis: 40%;
 }
 
-.footer__contact,  .footer__explore{
+.footer__contact,
+.footer__explore {
   flex-basis: 20%;
   font-size: 1.2rem;
 }
 
-.footer__contact-title, .footer__explore-title{
+.footer__contact-title,
+.footer__explore-title {
   font-size: 2.2rem;
   font-weight: 600;
   color: white;
