@@ -3,12 +3,27 @@
 }
 
 .about{
-  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 5rem 0;
+  gap: 5rem;
+}
+
+.about__mission, .about__vision, .about__objectives{
+  height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+padding: 3rem 0;
+}
+
+.about__vision{
+  background-color: var(--color--icons);
 }
 
 .about__image, .about__content{
@@ -56,13 +71,23 @@ animation: spin 1s linear infinite;
 }
 
 
-@media (max-width: 550px) {
-  .about {
-    flex-direction: column;
-    gap: 2rem;
-  }
+@media (max-width: 800px) {
 
+  .about{
+    padding: 1rem;
+  }
   .about__image, .about__content{
     width: 100%;
+  }
+
+  .about__mission, .about__vision, .about__objectives{
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+
+  .about__content{
+    width: 100%;
+    padding: 0 1rem;
   }
 }
