@@ -71,6 +71,27 @@
           debitis quam error similique!</p>
       </div>
     </section>
+
+
+    <section class="about__proyects">
+
+      <!-- <div *ngIf="(proyects$ | async) as results">
+        <ng-container *ngFor="let item of results.proyects; trackBy: trackItem">
+          <h1>{{ item.name }}</h1>
+        </ng-container>
+      </div> -->
+
+
+        <div *ngIf="(proyects$ | async) as resultObject">
+          <h1 *ngFor="let item of resultObject">{{ item.name }}</h1>
+        </div>
+      
+      @if (erroMessage) {
+        <app-error-message [errorMessage]="erroMessage"></app-error-message>
+      }
+
+
+    </section>
   </main>
 
   <app-footer></app-footer>
