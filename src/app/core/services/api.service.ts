@@ -11,7 +11,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getProyects() : Observable<proyect> {
-    return this.http.get<proyect>(`${environment.urlBase}proyectos`);
+  getProyects() : Observable<proyect[]> {
+    return this.http.get<proyect[]>(`${environment.urlBase}proyectos`);
   }
 }
