@@ -1,25 +1,27 @@
-<!-- <nav class="navbar">
-  <div class="navbar__logo">
-    <img src="../../../assets/Logo2.png" alt="Logo" class="navbar__logo-image">
-  </div>
-  <div class="navbar__links" [ngClass]="{ 'navbar__links--active': isNavbarActive }">
-    <a routerLink="/home" routerLinkActive="active-link" (click)="closeNavbar()" class="navbar__link">Home</a>
-
-    <a routerLink="/aboutUs" routerLinkActive="active-link" (click)="closeNavbar()" class="navbar__link">Sobre nosotros</a>
-
-    <a routerLink="/contact" routerLinkActive="active-link" (click)="closeNavbar()" class="navbar__link">Contacto</a>
-
-    <a routerLink="/resources" routerLinkActive="active-link" (click)="closeNavbar()" class="navbar__link">Recursos</a>
-  </div>
+<nav class="navbar">
+  <img src="../../../assets/Logo2.png" alt="Logo" class="navbar__logo">
+  <ul class="navbar__links" [ngClass]="{ 'navbar__links--active': isNavbarActive }">
+    <li class="navbar__item"><a routerLink="/home" routerLinkActive="active-link" (click)="closeNavbar()"
+        class="navbar__link">Home</a></li>
+    <li class="navbar__item"><a routerLink="/aboutUs" routerLinkActive="active-link" (click)="closeNavbar()"
+        class="navbar__link">Sobre nosotros</a>
+    </li>
+    <li class="navbar__item"><a routerLink="/contact" routerLinkActive="active-link" (click)="closeNavbar()"
+        class="navbar__link">Contacto</a></li>
+    <li class="navbar__item"><a routerLink="/resources" routerLinkActive="active-link" (click)="closeNavbar()"
+        class="navbar__link">Recursos</a></li>
+  </ul>
   <div class="navbar__hamburger" (click)="toggleNavbar()">
     <div class="navbar__hamburger-line"></div>
     <div class="navbar__hamburger-line"></div>
     <div class="navbar__hamburger-line"></div>
   </div>
 </nav>
- -->
 
-<nav class="navbar">
+
+
+
+<!-- <nav class="navbar">
   <img src="../../../assets/Logo2.png" alt="Logo" class="navbar__logo">
   <ul class="navbar__links" [ngClass]="{ 'navbar__links--active': isNavbarActive }">
     <li class="navbar__item"><a routerLink="/home" routerLinkActive="active-link" (click)="closeNavbar()"
@@ -39,4 +41,4 @@
   <div class="navbar__hamburger-line"></div>
   <div class="navbar__hamburger-line"></div>
   <div class="navbar__hamburger-line"></div>
-</div>
+</div> -->
