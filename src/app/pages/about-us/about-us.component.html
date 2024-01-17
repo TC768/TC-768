@@ -76,9 +76,9 @@
 
     <section class="about__proyects">
       @if (proyects$ | async; as resultObject) {
-      @for (item of resultObject; track item.name) {
-      <h1>{{ item.name }}d</h1>
-      }
+        @for (item of resultObject; track item.name) {
+          <h1>{{ item.name }}</h1>
+        }
       }
     </section>
 

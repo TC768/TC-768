@@ -1,9 +1,0 @@
-:host {
-  width: 100%;
-}
-
-nav {
-  padding: 3rem;
-  width: 100%;
-  background-color: var(--color--footer);
-}

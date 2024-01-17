@@ -23,7 +23,6 @@ export class AboutUsComponent implements OnInit {
   ngOnInit(): void {
     this.proyects$ = this.service.getProyects().pipe(catchError((error: string) => {
       this.erroMessage = error;
-      console.log('sdsdsd', error);
       return EMPTY;
     }));
   }
