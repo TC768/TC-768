@@ -1,3 +1,20 @@
+# Angular
+**/node_modules/
+**/dist/
+**/.angular/
+**/.vscode/
+**/.idea/
+**/.vs/
+**/.DS_Store
+**/npm-debug.log
+**/yarn-error.log
+**/yarn-debug.log
+**/yarn.lock
+**/package-lock.json
+**/coverage/
+**/package.json
+**/package-lock.json
+
 # Logs
 logs
 *.log
