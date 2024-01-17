@@ -81,11 +81,17 @@
         </ng-container>
       </div> -->
 
+      <div *ngIf="proyects$ | async as proyects; else errorTemplate">
+        <h2>List of Projects:</h2>
+        <ul>
+          <li *ngFor="let proyect of proyects">
+            {{ proyect.name }}
+            <!-- Puedes mostrar otras propiedades de tu objeto proyect aquí -->
+          </li>
+        </ul>
+      </div>
 
-        <div *ngIf="(proyects$ | async) as resultObject">
-          <h1 *ngFor="let item of resultObject">{{ item.name }}</h1>
-        </div>
-      
+
       @if (erroMessage) {
         <app-error-message [errorMessage]="erroMessage"></app-error-message>
       }

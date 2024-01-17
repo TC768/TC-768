@@ -3,7 +3,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { NavFalsoComponent } from '../../components/nav-falso/nav-falso.component';
 import { ApiService } from '../../core/services/api.service';
 import { EMPTY, Observable, catchError } from 'rxjs';
-import { proyects } from '../../interfaces/proyects';
+import { proyect } from '../../interfaces/proyect';
 import { AsyncPipe } from '@angular/common';
 import { ErrorMessageComponent } from '../../components/error-message/error-message.component';
 
@@ -16,7 +16,7 @@ import { ErrorMessageComponent } from '../../components/error-message/error-mess
 })
 export class AboutComponent implements OnInit {
 
-  public proyects$!: Observable<proyects>;
+  public proyects$!: Observable<proyect>;
   public erroMessage: string = "";
   constructor(private service: ApiService) { }
 
@@ -25,10 +25,7 @@ export class AboutComponent implements OnInit {
       this.erroMessage = error;
       return EMPTY;
     }));
-  }
 
-  // En tu componente TypeScript
-  trackItem(index: number, item: any): string {
-    return item.name; // Puedes cambiar esto según la propiedad única de tus elementos
+    console.log(this.proyects$);
   }
 }
