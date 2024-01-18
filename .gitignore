@@ -10,11 +10,9 @@
 **/yarn-error.log
 **/yarn-debug.log
 **/yarn.lock
-**/package-lock.json
 **/coverage/
 
 # npm
-**/package.json
 **/package-lock.json
 
 # Logs
