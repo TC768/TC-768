@@ -152,3 +152,4 @@ dist
 
 .package-lock.json
 *.angular/cache/
+.angular/cache/17.0.9/vite/deps/_metadata.json
