@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FooterComponent } from '../../components/footer/footer.component';
-import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { ApiService } from '../../core/services/api.service';
 import { EMPTY, Observable, catchError, tap } from 'rxjs';
 import { proyect } from '../../interfaces/proyect';
@@ -10,7 +8,7 @@ import { ErrorMessageComponent } from '../../components/error-message/error-mess
 @Component({
   selector: 'app-about-us',
   standalone: true,
-  imports: [AsyncPipe, FooterComponent, NavbarComponent, ErrorMessageComponent],
+  imports: [AsyncPipe, ErrorMessageComponent],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.css'
 })

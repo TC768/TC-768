@@ -13,7 +13,7 @@
   padding: 1.5rem;
 }
 
-.navbar__links{
+.navbar__links {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,9 +24,11 @@
   max-height: 40px;
   margin-left: 50px;
 }
-.navbar__hamburger{
+
+.navbar__hamburger {
   display: none;
 }
+
 .navbar__links a {
   text-decoration: none;
   color: #333333;
