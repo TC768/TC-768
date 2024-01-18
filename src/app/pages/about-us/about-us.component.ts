@@ -19,10 +19,9 @@ export class AboutUsComponent implements OnInit {
   constructor(private service: ApiService) { }
 
   ngOnInit(): void {
-    // this.proyects$ = this.service.getProyects().pipe(catchError((error: string) => {
-    //   this.erroMessage = error;
-    //   return EMPTY;
-    // }));
-    console.log("As");
+    this.proyects$ = this.service.getProyects().pipe(catchError((error: string) => {
+      this.erroMessage = error;
+      return EMPTY;
+    }));
   }
 }

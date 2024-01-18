@@ -1,4 +1,4 @@
-<!-- <main class="about">
+<main class="about">
 
   <section class="about__mission">
     <div class="about__image">
@@ -71,15 +71,13 @@
 
 
 
-   <section class="about__proyects">
-      @if (proyects$ | async; as resultObject) {
-        @for (item of resultObject; track item.name) {
-          <h1>{{ item.name }}</h1>
-        }
-      }
-    </section
+  <section class="about__proyects">
+    @if (proyects$ | async; as resultObject) {
+    @for (item of resultObject; track item.name) {
+    <h1>{{ item.name }}</h1>
+    }
+    }
+  </section>
 
 
-</main> -->
-
-<h1>asa</h1>
+</main>

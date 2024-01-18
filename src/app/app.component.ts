@@ -10,7 +10,7 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, NavbarComponent, FooterComponent]
+    imports: [CommonModule, RouterOutlet, NavbarComponent, FooterComponent, AboutUsComponent]
 })
 export class AppComponent {
   title = 'TC-768';
