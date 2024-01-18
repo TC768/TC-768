@@ -25,7 +25,7 @@
 }
 
 .about__vision {
-  background-color: var(--color--icons);
+  background-color: var(--color-secondary);
 }
 
 .about__image,
@@ -58,14 +58,17 @@
   font-weight: 600;
 }
 
-
 .spinner {
   width: 20px;
   height: 20px;
   border: 2px solid #333;
   border-radius: 50%;
-  border-top: 2px solid #fff;
+  border-top: 2px solid var(--color-primary);
   animation: spin 1s linear infinite;
+}
+
+.about__vision .about__title, .about__vision .about__description{
+  color: var(--color-primary);
 }
 
 @keyframes spin {

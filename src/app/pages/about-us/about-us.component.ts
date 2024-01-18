@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../core/services/api.service';
 import { EMPTY, Observable, catchError, tap } from 'rxjs';
-import { proyect } from '../../interfaces/proyect';
+import { Project } from '../../interfaces/project';
 import { AsyncPipe } from '@angular/common';
 import { ErrorMessageComponent } from '../../components/error-message/error-message.component';
 
@@ -14,7 +14,7 @@ import { ErrorMessageComponent } from '../../components/error-message/error-mess
 })
 export class AboutUsComponent implements OnInit {
 
-  public proyects$!: Observable<proyect[]>;
+  public proyects$!: Observable<Project[]>;
   public erroMessage: string = "";
   constructor(private service: ApiService) { }
 

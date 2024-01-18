@@ -1,11 +1,16 @@
+:host{
+  width: 100%;
+}
+
 .navbar {
   position: relative;
-  background-color: #ffffff;
+  background-color: var(--color-primary);
   padding: 1.5rem;
   display: flex;
   align-items: center;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  width: 100vw;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .navbar-links {
@@ -57,7 +62,7 @@
     position: absolute;
     top: 7.5rem;
     left: 0;
-    background-color: #ffffff;
+    background-color: var(--color-primary);
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }

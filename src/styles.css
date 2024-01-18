@@ -1,15 +1,12 @@
-:root{
-    /* color-scheme: light dark; */
-    --color-primary: #F2F2F2;
-    --color-secondary: #000;
+:root {
+  --color-primary: #fff;
+  --color-secondary: #308db2;
 
-    --color--footer: #308db2;
+  --color-icons: #62b7d8;
 
-    --color--icons: #62b7d8;
-
-    --color-text: #112643;
-    --color-subtitle: #c7c7c7;
-  }
+  --color-text: #112643;
+  --color-subtitle: #c7c7c7;
+}
 
   * {
     margin: 0;
