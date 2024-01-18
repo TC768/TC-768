@@ -23,23 +23,26 @@
   margin-left: 50px;
 }
 
-.navbar-links a {
+.navbar__hamburger {
+  display: none;
+}
+
+.navbar__links a {
   text-decoration: none;
   color: #333333;
-  margin: 0 15px;
+  margin: 0 0.8rem;
   cursor: pointer;
 }
 
-.navbar-links a:hover {
-  font-weight: bold; /* Apariencia para el texto al pasar el mouse */
+.navbar__links a:hover {
+  font-weight: bold;
   transition: background-color 0.5s;
 }
 
 .active-link {
-  font-weight: bold; /* Apariencia para la opción seleccionada */
+  font-weight: bold;
 }
 
-/* Estilo adicional para cuando el navbar esté fijado en la parte superior */
 .fixed-navbar {
   position: fixed;
   top: 0;
@@ -50,14 +53,15 @@
 
 /* Estilos para la versión móvil */
 @media (max-width: 768px) {
-  .navbar-links {
+  .navbar__links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 0;
     left: 0;
     background-color: #ffffff;
     width: 100%;
+    height: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
 
@@ -72,17 +76,21 @@
     margin: 10px 15px;
   }
 
-  .navbar.active-navbar .navbar-links {
+  .navbar__links--active {
     display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
   }
 
-  .navbar-hamburger {
+  .navbar__hamburger {
     display: block;
+    position: absolute;
     cursor: pointer;
     margin-left: auto;
   }
 
-  .navbar-hamburger div {
+  .navbar__hamburger div {
     width: 25px;
     height: 3px;
     background-color: #333333;
@@ -90,15 +98,15 @@
     transition: 0.4s;
   }
 
-  .active-navbar .navbar-hamburger div:nth-child(1) {
+  .navbar__links--active~.navbar__hamburger div:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
   }
 
-  .active-navbar .navbar-hamburger div:nth-child(2) {
+  .navbar__links--active~.navbar__hamburger div:nth-child(2) {
     opacity: 0;
   }
 
-  .active-navbar .navbar-hamburger div:nth-child(3) {
+  .navbar__links--active~.navbar__hamburger div:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 }
