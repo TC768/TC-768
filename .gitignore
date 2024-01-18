@@ -12,6 +12,8 @@
 **/yarn.lock
 **/package-lock.json
 **/coverage/
+
+# npm
 **/package.json
 **/package-lock.json
 
