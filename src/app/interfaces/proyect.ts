@@ -1,3 +1,3 @@
 export interface proyect {
-  name: string
-}
+    name: string
+  }
