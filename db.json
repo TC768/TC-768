@@ -1,16 +1,31 @@
 {
-    "proyectos": [
-      {
-        "id": 1,
-        "name": "Proyecto 1"
-      },
-      {
-        "id": 2,
-        "name": "Proyecto 2"
-      },
-      {
-        "id": 3,
-        "name": "Proyecto 3"
-      }
-    ]
-  }
+  "proyectos": [
+    {
+      "id": 1,
+      "name": "Proyecto 1",
+      "description": "Este es un proyecto de prueba",
+      "url": [
+        "https://source.unsplash.com/78A265wPiO3",
+        "https://source.unsplash.com/78A265wPiO4"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Proyecto 2",
+      "description": "Este es un proyecto de prueba",
+      "url": [
+        "https://source.unsplash.com/78A265wPiO4",
+        "https://source.unsplash.com/78A265wPiO4"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Proyecto 3",
+      "description": "Este es un proyecto de prueba",
+      "url": [
+        "https://source.unsplash.com/78A265wPiO6",
+        "https://source.unsplash.com/78A265wPiO4"
+      ]
+    }
+  ]
+}

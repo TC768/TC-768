@@ -1,6 +1,6 @@
 <main class="about">
 
-  <section class="about__mission">
+  <!-- <section class="about__mission">
     <div class="about__image">
 
       @defer {
@@ -67,17 +67,9 @@
         odio, ipsum voluptas itaque pariatur doloribus laboriosam officia? Autem labore a ratione velit delectus,
         debitis quam error similique!</p>
     </div>
-  </section>
+  </section> -->
 
-
-
-  <section class="about__proyects">
-    @if (proyects$ | async; as resultObject) {
-    @for (item of resultObject; track item.name) {
-    <h1>{{ item.name }}</h1>
-    }
-    }
-  </section>
+  <app-carousel-projects></app-carousel-projects>
 
 
 </main>

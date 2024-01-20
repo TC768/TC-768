@@ -85,7 +85,8 @@
 @media (max-width: 800px) {
 
   .about {
-    padding: 1rem;
+    /* padding: 1rem; */
+    /* por algo lo tiene resiara ya que le acrrolosel no peude tener esps padisn */
   }
 
   .about__image,

@@ -1,3 +1,6 @@
 export interface Project {
-    name: string
-  }
+  id: number;
+  name: string;
+  description: string;
+  url: string[]; // Cambiado a un array de strings
+}
