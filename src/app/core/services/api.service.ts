@@ -14,4 +14,8 @@ export class ApiService {
   getProyects() : Observable<Project[]> {
     return this.http.get<Project[]>(`${environment.urlBase}proyectos`);
   }
+
+  getProyect(id : number) : Observable<Project[]> {
+    return this.http.get<Project[]>(`${environment.urlBase}proyectos?id=${id}`);
+  }
 }
