@@ -10,26 +10,26 @@
 
   <div class="carousel__slides" data-slides>
 
-      @if (proyects$ | async; as resultObject) {
-        @for (item of resultObject; track item.name;  let i = $index) {
+    @if (proyects$ | async; as resultObject) {
+    @for (item of resultObject; track item.name; let i = $index) {
 
-          <div class="carousel__slide" [attr.data-active]="i === 0 ? 'true' : null">
-            <img src="{{ item.url[0] }}" alt="Nature Image #1">
-            <div class="carousel__contente">
-              <div class="carousel__info">
-                <h1 class="carousel__title">{{ item.name }}</h1>
-                <p class="carousel__description">{{ item.description }}</p>
-              </div>
-              <div class="carousel__links">
-                <a class="carousel__link" (click)="navigateToProject(item.id)">Ver mas</a>
+    <div class="carousel__slide" [attr.data-active]="i === 0 ? 'true' : null">
+      <img src="{{ item.url[0] }}" alt="Nature Image #1">
+      <div class="carousel__contente">
+        <div class="carousel__info">
+          <h1 class="carousel__title">{{ item.name }}</h1>
+          <p class="carousel__description">{{ item.description }}</p>
+        </div>
+        <div class="carousel__links">
+          <a class="carousel__link" (click)="navigateToProject(item.id)">Ver mas</a>
 
 
-              </div>
-            </div>
-          </div>
+        </div>
+      </div>
+    </div>
 
-        }
-      }
+    }
+    }
 
 
   </div>

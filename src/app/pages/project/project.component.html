@@ -1,1 +1,37 @@
-<p>project works!</p>
+@if (proyect$ | async; as resultObject) {
+
+<main class="project">
+
+  <div class="proyect__content">
+    <h1>{{ resultObject.name }}</h1>
+    <p>{{ resultObject.description }}</p>
+  </div>
+
+  <section class="proyect__carousel carousel " data-carousel>
+
+    <button class="carousel__button carousel__button--prev" (click)="moveCarousel(-1)">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+
+    <button class="carousel__button carousel__button--next" (click)="moveCarousel(1)">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+
+    <div class="carousel__slides" data-slides>
+
+          @for (item of resultObject.url; track item;  let i = $index) {
+
+            <div class="carousel__slide" [attr.data-active]="i === 0 ? 'true' : null">
+              <!-- <H1>{{item}}</H1> -->
+              <img src="{{ item }}" alt="Nature Image #1">
+            </div>
+          }
+
+
+
+    </div>
+  </section>
+
+</main>
+
+}

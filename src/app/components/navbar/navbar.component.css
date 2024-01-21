@@ -1,4 +1,4 @@
-:host{
+:host {
   width: 100%;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .navbar-logo img {
-  max-height:4.5rem;
+  max-height: 4.5rem;
   margin-left: 5rem;
 }
 
@@ -37,12 +37,14 @@
 }
 
 .navbar-links a:hover {
-  font-weight: bold; /* Apariencia para el texto al pasar el mouse */
+  font-weight: bold;
+  /* Apariencia para el texto al pasar el mouse */
   transition: background-color 0.5s;
 }
 
 .active-link {
-  font-weight: bold; /* Apariencia para la opción seleccionada */
+  font-weight: bold;
+  /* Apariencia para la opción seleccionada */
 }
 
 /* Estilo adicional para cuando el navbar esté fijado en la parte superior */
