@@ -3,8 +3,8 @@
 <main class="project">
 
   <div class="proyect__content">
-    <h1>{{ resultObject.name }}</h1>
-    <p>{{ resultObject.description }}</p>
+    <h1 class="proyect__title">{{ resultObject.name }}</h1>
+    <p class="proyect__description">{{ resultObject.description }}</p>
   </div>
 
   <section class="proyect__carousel carousel " data-carousel>
@@ -19,16 +19,12 @@
 
     <div class="carousel__slides" data-slides>
 
-          @for (item of resultObject.url; track item;  let i = $index) {
+      @for (item of resultObject.url; track item; let i = $index) {
 
-            <div class="carousel__slide" [attr.data-active]="i === 0 ? 'true' : null">
-              <!-- <H1>{{item}}</H1> -->
-              <img src="{{ item }}" alt="Nature Image #1">
-            </div>
-          }
-
-
-
+      <div class="carousel__slide" [attr.data-active]="i === 0 ? 'true' : null">
+        <img src="{{ item }}" alt="Nature Image #1">
+      </div>
+      }
     </div>
   </section>
 
