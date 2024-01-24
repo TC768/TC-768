@@ -59,6 +59,5 @@ baseline.json
 aio/content/examples/.DS_Store
 
 
-.angular/**/
-
-.angular/**/deps/@angular_common.js.map
+# Ignore cache created with the Angular CLI.
+.angular/
