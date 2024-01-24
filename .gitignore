@@ -1,20 +1,63 @@
-*
+.DS_STORE
 
-!*/scr
-!*/.editorconfig
-!*/.gitignore
-!*/angular.json
-!*/db.json
-!*/package.json
-!*/README.md
-!*/server.ts
-!*/tsconfig.spec.json
-!*/tsconfig.json
-!*/tsconfig.app.json
-.angular/cache/17.0.9/vite/deps/_metadata.json
-.angular/cache/17.0.9/vite/deps/@angular_router.js.map
-.angular/cache/17.0.9/vite/deps/@angular_router.js
-.angular/cache/17.0.9/vite/deps/@angular_platform-browser.js
-.angular/cache/17.0.9/vite/deps/@angular_common.js
-.angular/cache/17.0.9/vite/deps/@angular_core.js
-/.angular
+/dist/
+/bazel-out
+/integration/bazel/bazel-*
+*.log
+/node_modules/
+
+# CircleCI temporary file for cache key computation.
+# See `save_month_to_file` in `.circleci/config.yml`.
+month.txt
+
+# Include when developing application packages.
+pubspec.lock
+.c9
+.idea/
+.devcontainer/*
+!.devcontainer/README.md
+!.devcontainer/recommended-devcontainer.json
+!.devcontainer/recommended-Dockerfile
+.settings/
+.vscode/launch.json
+.vscode/settings.json
+.vscode/tasks.json
+*.swo
+*.swp
+modules/.settings
+modules/.vscode
+.vimrc
+.nvimrc
+
+# Don't check in secret files
+*secret.js
+
+# Ignore npm/yarn debug log
+npm-debug.log
+yarn-error.log
+
+# build-analytics
+.build-analytics
+
+# rollup-test output
+/modules/rollup-test/dist/
+
+# User specific bazel settings
+.bazelrc.user
+
+# User specific ng-dev settings
+.ng-dev.user*
+
+.notes.md
+baseline.json
+
+# Ignore .history for the xyz.local-history VSCode extension
+.history
+
+# Husky
+.husky/_
+aio/content/examples/.DS_Store
+
+
+# Ignore cache created with the Angular CLI.
+.angular/
