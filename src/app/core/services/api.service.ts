@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, catchError, throwError } from 'rxjs';
-import { proyect } from '../../interfaces/proyect';
+import { Observable, catchError, map, throwError } from 'rxjs';
+import { Project } from '../../interfaces/project';
 import { environment } from '../../environments/environment.development';
 
 @Injectable({
@@ -11,7 +11,13 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getProyects() : Observable<proyect[]> {
-    return this.http.get<proyect[]>(`${environment.urlBase}proyectos`);
+  getProyects(): Observable<Project[]> {
+    return this.http.get<Project[]>(`${environment.urlBase}proyectos`);
+  }
+
+  getProyect(id: number): Observable<Project> {
+    return this.http.get<Project[]>(`${environment.urlBase}proyectos?id=${id}`).pipe(
+      map(projects => projects[0])
+    );
   }
 }
