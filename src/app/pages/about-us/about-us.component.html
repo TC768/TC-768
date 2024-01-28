@@ -10,16 +10,9 @@
       }
     </div>
     <div class="about__content">
-      <h1 class="about__title">Mision</h1>
-      <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, incidunt commodi!
-        Illum dicta minima eaque, cupiditate consequatur accusamus, sequi obcaecati quos saepe nisi perferendis id
-        fuga nesciunt! Totam, repellendus aliquid!
-        Ducimus fugit nihil, animi repellat consequatur earum magnam amet illum totam labore maiores facilis impedit
-        at voluptatibus, molestias, ipsa reiciendis eius rem qui accusamus atque laboriosam. Eligendi cum libero
-        debitis?
-        Hic sapiente, voluptates corporis accusantium accusamus temporibus nisi? Quidem officiis sapiente aliquid
-        odio, ipsum voluptas itaque pariatur doloribus laboriosam officia? Autem labore a ratione velit delectus,
-        debitis quam error similique!</p>
+      <h1 class="about__title">Quiénes somos</h1>
+      <p class="about__description">TC - 768: APOYO  Y  FORTALECIMIENTO   AL  SECTOR EMPRESARIAL DEL CANTÓN DE  TURRIALBA; MICROEMPRESAS, MUJERES  EMPRENDEDORAS, ASOCIACIONES Y  ORGANIZACIONES
+      </p>
     </div>
   </section>
 
@@ -33,16 +26,8 @@
       }
     </div>
     <div class="about__content">
-      <h1 class="about__title">Vision</h1>
-      <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, incidunt commodi!
-        Illum dicta minima eaque, cupiditate consequatur accusamus, sequi obcaecati quos saepe nisi perferendis id
-        fuga nesciunt! Totam, repellendus aliquid!
-        Ducimus fugit nihil, animi repellat consequatur earum magnam amet illum totam labore maiores facilis impedit
-        at voluptatibus, molestias, ipsa reiciendis eius rem qui accusamus atque laboriosam. Eligendi cum libero
-        debitis?
-        Hic sapiente, voluptates corporis accusantium accusamus temporibus nisi? Quidem officiis sapiente aliquid
-        odio, ipsum voluptas itaque pariatur doloribus laboriosam officia? Autem labore a ratione velit delectus,
-        debitis quam error similique!</p>
+      <h1 class="about__title">DESCRIPCIÓN DEL PROYECTO</h1>
+      <p class="about__description">Este proyecto pretende fortalecer el sector de la microempresa,  mujeres emprendedoras y organizaciones comunales,  localizadas en el área de influencia del Recinto de Turrialba , a  través de talleres, los cuáles contribuyan al mejoramiento de la  gestión empresarial y potencialicen  las fortalezas de cada  negocio para lograr un mayor crecimiento.</p>
     </div>
   </section>
 
@@ -56,18 +41,17 @@
       }
     </div>
     <div class="about__content">
-      <h1 class="about__title">Objetivos</h1>
-      <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, incidunt commodi!
-        Illum dicta minima eaque, cupiditate consequatur accusamus, sequi obcaecati quos saepe nisi perferendis id
-        fuga nesciunt! Totam, repellendus aliquid!
-        Ducimus fugit nihil, animi repellat consequatur earum magnam amet illum totam labore maiores facilis impedit
-        at voluptatibus, molestias, ipsa reiciendis eius rem qui accusamus atque laboriosam. Eligendi cum libero
-        debitis?
-        Hic sapiente, voluptates corporis accusantium accusamus temporibus nisi? Quidem officiis sapiente aliquid
-        odio, ipsum voluptas itaque pariatur doloribus laboriosam officia? Autem labore a ratione velit delectus,
-        debitis quam error similique!</p>
+      <h1 class="about__title">IMPACTO DEL PROYECTO</h1>
+      <p class="about__description">Promover una cultura de buenas prácticas en la gestión empresarial, através de la  adquisición de nuevos conocimientos y herramientas del área de administración de  negocios, además, el desarrollo de nuevas habilidades como el manejo de  dispositivos tecnológicos, programas, aplicaciones, entre otros.
+      </p>
     </div>
   </section>
+
+
+
+
+
+  
 
 
   <app-timeline></app-timeline>
@@ -80,7 +64,11 @@
         ex molestiae deserunt, tempore rem dicta nesciunt aut quia tenetur asperiores eveniet at, debitis laudantium in
         quidem, sapiente qui.</p>
     </div>
-    <app-carousel-projects></app-carousel-projects>
+    @defer {
+      <app-carousel-projects></app-carousel-projects>
+      } @placeholder {
+      <span class="spinner"></span>
+      }
   </section>
 
 
