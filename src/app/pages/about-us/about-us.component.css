@@ -12,9 +12,12 @@
   gap: 5rem;
 }
 
-.about__mission,
-.about__vision,
-.about__objectives {
+.about__objective-specific,
+.about__objective-general,
+.about__achieved,
+.about__impact,
+.about__project,
+.about__us {
   height: 100%;
   width: 100%;
   display: flex;
@@ -33,7 +36,7 @@
   width: 50%;
 }
 
-.about__image {
+.about__image-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,12 +54,34 @@
 }
 
 .about__title {
+  display: inline-block;
   font-size: 2rem;
   text-align: left;
   text-wrap: balance;
   color: var(--color-text);
   font-weight: bold;
-  padding-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.section__color{
+  background-color: var(--color-secondary);
+}
+
+.section__white{
+  background-color: var(--color-primary);
+  color: black;
+}
+
+.section__color .about__description,
+.section__color .about__list,
+.section__color .about__info{
+  color: white;
+}
+
+.section__color .about__title{
+  color: white;
+  border-bottom: 2px solid white;
 }
 
 .about__description {
@@ -100,7 +125,7 @@
   font-size: 2rem;
   text-align: center;
   text-wrap: balance;
-  color: var(--color-white);
+  color: var(--color-primary);
   font-weight: bold;
   padding-bottom: 1rem;
 }
@@ -108,7 +133,7 @@
 .projects__description-text {
   font-size: 1.5rem;
   font-weight: lighter;
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 @keyframes spin {
@@ -124,12 +149,11 @@
 
 @media (max-width: 800px) {
 
-  .about {
-    /* padding: 1rem; */
-    /* por algo lo tiene resiara ya que le acrrolosel no peude tener esps padisn, creo que la imagen de los objeticvopis poir eso lo tinene */
-  }
+  /* .about {
+    padding: 1rem;
+  } */
 
-  .about__image,
+  /* .about__image,
   .about__content {
     width: 100%;
   }
@@ -145,5 +169,28 @@
   .about__content {
     width: 100%;
     padding: 0 1rem;
+  } */
+  .about__content {
+    width: 100%;
+    padding: 0 1rem;
   }
+
+  .about__title{
+    width: 100%;
+    text-align: center;
+  }
+
+  .about__description{
+    width: 100%;
+    text-align: left;
+  }
+
+  .about__objective-specific,
+.about__objective-general,
+.about__achieved,
+.about__impact,
+.about__project,
+.about__us {
+  flex-direction: column;
+}
 }
