@@ -145,11 +145,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
-
-
-.angular
-
-.package-lock.json
-*.angular/cache/
-.angular/cache/17.0.9/vite/deps/_metadata.json

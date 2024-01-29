@@ -1,16 +1,18 @@
-/* home.component.css */
-
-div {
-  text-align: center;
-  margin: 20px;
+/* Estilos adicionales para flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-h1 {
-  color: #333333;
+.text-content {
+  flex: 1; /* El contenido de texto ocupará el espacio restante */
+  padding-right: 20px; /* Espaciado derecho para separar la imagen del texto */
 }
 
-.title {
-  font-size: clamp(1rem, 0.3043rem + 3.4783vw, 3rem);
-  font-weight: 500;
-  margin: 20px;
+.image-container {
+  flex-shrink: 0; /* La imagen no se reducirá en tamaño */
+}
+
+.home-container {
+  padding: 100px;
 }
