@@ -64,6 +64,7 @@ p a {
 
 li {
   list-style-type: none;
+  font-weight: normal;
 }
 
 html {
@@ -86,7 +87,7 @@ b,
 u,
 em {
   font-size: 1em;
-  font-weight: inherit;
+  font-weight: normal;
   font-style: inherit;
   text-decoration: none;
   color: inherit;
