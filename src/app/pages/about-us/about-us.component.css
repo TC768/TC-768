@@ -84,11 +84,6 @@
   border-bottom: 2px solid white;
 }
 
-/* .about__title--white{
-  color: white;
-  border-bottom: 2px solid var(--color-white);
-} */
-
 .about__description {
   font-size: 1.5rem;
   font-weight: lighter;
@@ -154,12 +149,11 @@
 
 @media (max-width: 800px) {
 
-  .about {
-    /* padding: 1rem; */
-    /* por algo lo tiene resiara ya que le acrrolosel no peude tener esps padisn, creo que la imagen de los objeticvopis poir eso lo tinene */
-  }
+  /* .about {
+    padding: 1rem;
+  } */
 
-  .about__image,
+  /* .about__image,
   .about__content {
     width: 100%;
   }
@@ -175,5 +169,28 @@
   .about__content {
     width: 100%;
     padding: 0 1rem;
+  } */
+  .about__content {
+    width: 100%;
+    padding: 0 1rem;
   }
+
+  .about__title{
+    width: 100%;
+    text-align: center;
+  }
+
+  .about__description{
+    width: 100%;
+    text-align: left;
+  }
+
+  .about__objective-specific,
+.about__objective-general,
+.about__achieved,
+.about__impact,
+.about__project,
+.about__us {
+  flex-direction: column;
+}
 }
