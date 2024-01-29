@@ -4,15 +4,16 @@
 }
 
 .timeline {
-  --color: #fff;
-  --bgColor: #308db2;
+  /* --color: #fff; */
+  /* --bgColor: #308db2; */
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
-  color: var(--color);
+  color: var(--color-secondary);
   padding: 2rem;
-  background-color: var(--color-secondary);
+  margin-top: 1rem;
+  background-color: var(--color-primary);
 }
 
 .timeline__list {
@@ -32,7 +33,8 @@
   content: "";
   grid-column: 1;
   grid-row: 1 / span 20;
-  background: rgb(225, 225, 225);
+  background: var(--color-secondary);
+  /* [uede ser ahora vemos si lo cmabmsos */
   border-radius: calc(var(--line-w) / 2);
 }
 
@@ -59,9 +61,9 @@
   margin-inline: calc(var(--inlineP) * -1);
 
   text-align: center;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 
-  color: rgb(0, 0, 0);
+  color: var(--color-primary);
   font-size: 2rem;
   font-weight: 700;
 
@@ -80,7 +82,7 @@
   content: "";
   width: var(--inlineP);
   aspect-ratio: 1;
-  background: var(--color-primary);
+  background: var(--color-secondary);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
   position: absolute;
   top: 100%;
@@ -93,8 +95,8 @@
   position: absolute;
   width: 2rem;
   aspect-ratio: 1;
-  background: var(--bgColor);
-  border: 0.3rem solid var(--color-primary);
+  background: var(--color-primary);
+  border: 0.3rem solid var(--color-secondary);
   border-radius: 50%;
   top: 50%;
   transform: translate(50%, -50%);
@@ -166,7 +168,14 @@
 }
 
 .feature__description {
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   font-size: 2rem;
   font-weight: lighter;
+}
+
+
+.feature__title
+{
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid var(--color-secondary);
 }
