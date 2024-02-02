@@ -87,7 +87,7 @@
 
         <div class="contact__form-group">
           <label for="name" class="contact__form-label">Nombre:</label>
-          <input type="text" id="name" class="contact__form-input--initial" placeholder="Nombre" formControlName="name">
+          <input type="text" id="name" name="name" class="contact__form-input--initial" placeholder="Nombre" formControlName="name">
 
           <span class="text-danger" [class.red-icon]="form.get('name')?.invalid && form.get('name')?.touched || mostrarError">
             {{ mostrarError && form.get('name')?.invalid ? 'Este campo es requerido' : getErrorMessage('name') }}
@@ -100,7 +100,7 @@
 
         <div class="contact__form-group">
           <label for="apellido" class="contact__form-label">Apellido:</label>
-          <input type="text" id="apellido" class="contact__form-input" placeholder="Apellido"
+          <input type="text" id="apellido" name="lastName" class="contact__form-input" placeholder="Apellido"
             formControlName="lastName">
           <i class="bi bi-check contact__form-check"
             [class.contact__form-check-visible]="form.get('lastName')?.valid && form.get('lastName')?.touched"></i>
@@ -112,7 +112,7 @@
 
         <div class="contact__form-group">
           <label for="email" class="contact__form-label">Email:</label>
-          <input type="email" id="email" class="contact__form-input--initial" placeholder="Email"
+          <input type="email" id="email" name="email" class="contact__form-input--initial" placeholder="Email"
             formControlName="email">
           <i class="bi bi-check contact__form-check"
             [class.contact__form-check-visible]="form.get('email')?.valid && form.get('email')?.touched"></i>
@@ -124,7 +124,7 @@
 
         <div class="contact__form-group">
           <label for="phone" class="contact__form-label">Teléfono:</label>
-          <input type="tel" id="phone" class="contact__form-input" placeholder="Telefono" formControlName="phone" maxlength="9">
+          <input type="tel" id="phone" class="contact__form-input" placeholder="Telefono" formControlName="phone" name="phone" maxlength="9">
           <i class="bi bi-check contact__form-check"
             [class.contact__form-check-visible]="form.get('phone')?.valid && form.get('phone')?.touched"></i>
 
@@ -135,7 +135,7 @@
 
         <div class="contact__form-group-text-area">
           <label for="message" class="contact__form-label">Mensaje:</label>
-          <textarea name="message" id="message" class="contact__form-textarea" placeholder="Mensaje"
+          <textarea name="message" id="message" name="message" class="contact__form-textarea" placeholder="Mensaje"
             formControlName="message"></textarea>
           <i class="bi bi-check contact__form-check"
             [class.contact__form-check-visible-text-area]="form.get('message')?.valid && form.get('message')?.touched"></i>
