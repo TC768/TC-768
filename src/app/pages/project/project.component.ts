@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../core/services/api.service';
 import { EMPTY, Observable, catchError } from 'rxjs';
-import { Project } from '../../interfaces/project';
+import { IProject } from '../../interfaces/IProject';
 import { AsyncPipe } from '@angular/common';
 import { ErrorMessageComponent } from '../../components/error-message/error-message.component';
 import { CommonModule } from '@angular/common';
@@ -18,7 +18,7 @@ export class ProjectComponent implements OnInit {
 
   private projectId !: number;
 
-  public proyect$!: Observable<Project>;
+  public proyect$!: Observable<IProject>;
 
   public erroMessage: string = "";
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../core/services/api.service';
-import { EMPTY, Observable, catchError, tap } from 'rxjs';
-import { Project } from '../../interfaces/project';
+import { EMPTY, Observable, catchError } from 'rxjs';
+import { IProject } from '../../interfaces/IProject';
 import { AsyncPipe } from '@angular/common';
 import { ErrorMessageComponent } from '../../components/error-message/error-message.component';
 import { Router } from '@angular/router';
@@ -15,7 +15,7 @@ import { Router } from '@angular/router';
 })
 export class CarouselProjectsComponent implements OnInit {
 
-  public proyects$!: Observable<Project[]>;
+  public proyects$!: Observable<IProject[]>;
   public erroMessage: string = "";
   constructor(private service: ApiService, private router: Router) { }
 
