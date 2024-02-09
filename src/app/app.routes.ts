@@ -4,6 +4,7 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ResourceComponent } from './pages/resource/resource.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ProjectComponent } from './pages/project/project.component';
 
 export const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -11,5 +12,6 @@ export const routes: Routes = [
     {path: 'aboutUs', component: AboutUsComponent},
     {path: 'contact', component: ContactComponent},
     {path: 'resources', component: ResourceComponent},
+    {path: 'project/:id', component: ProjectComponent},
     {path: '**', component: PageNotFoundComponent}
 ];

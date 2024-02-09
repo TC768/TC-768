@@ -1,4 +1,4 @@
 export const environment = {
-    urlBase: 'http://localhost:3000/',
-    production: false
-  };
+  urlBase: 'http://localhost:3000/',
+  production: false
+};

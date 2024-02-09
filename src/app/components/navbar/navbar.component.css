@@ -1,11 +1,16 @@
+:host {
+  width: 100%;
+}
+
 .navbar {
   position: relative;
-  background-color: #ffffff;
+  background-color: var(--color-primary);
   padding: 1.5rem;
   display: flex;
   align-items: center;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  width: 100vw;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .navbar-links {
@@ -20,7 +25,9 @@
 }
 
 .navbar-logo img {
-  max-height:4.5rem;
+  width: 7.3rem;
+  height: 5.5rem;
+
   margin-left: 5rem;
 }
 
@@ -32,12 +39,14 @@
 }
 
 .navbar-links a:hover {
-  font-weight: bold; /* Apariencia para el texto al pasar el mouse */
+  font-weight: bold;
+  /* Apariencia para el texto al pasar el mouse */
   transition: background-color 0.5s;
 }
 
 .active-link {
-  font-weight: bold; /* Apariencia para la opción seleccionada */
+  font-weight: bold;
+  /* Apariencia para la opción seleccionada */
 }
 
 /* Estilo adicional para cuando el navbar esté fijado en la parte superior */
@@ -57,7 +66,7 @@
     position: absolute;
     top: 7.5rem;
     left: 0;
-    background-color: #ffffff;
+    background-color: var(--color-primary);
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
