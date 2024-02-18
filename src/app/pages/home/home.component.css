@@ -1,71 +1,60 @@
-/* Estilos adicionales para flexbox */
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.text-content {
-  flex: 1; /* El contenido de texto ocupará el espacio restante */
-  padding-right: 20px; /* Espaciado derecho para separar la imagen del texto */
-}
-
-.homeSectionImage {
+:host {
   width: 100%;
-  height: auto;
-  object-fit: cover;
 }
 
-.home-container {
-  width: 100vw;
-}
-
-/* Estilos generales */
-.generalInformation-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: lightblue;
-}
-
-/* Estilos específicos para cada sección de información */
-.info1,
-.info2,
-.info3,
-.info4 {
-  flex: 0 0 40%; /* Cada sección ocupa inicialmente el 48% del ancho del contenedor */
-  margin-bottom: 20px; /* Espaciado entre las secciones */
-}
-
-/* Estilos adicionales para flexbox */
-.info1, .info2, .info3, .info4 {
+.main-section {
   display: flex;
   flex-direction: column;
 }
 
-.homeSectionImage {
-  width: 40%;
-  height: auto;
-  object-fit: cover;
+.image-section {
+  position: relative;
 }
 
-.title {
-  margin-top: 10px; /* Espaciado entre la imagen y el título */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+  width: 100%; /* Ajusta el ancho del área de texto según sea necesario */
+  font-size: 2.5em;
+  font-weight: bold;
   text-align: center;
 }
 
-/* Media query para ajustar el diseño en pantallas más pequeñas */
-@media (max-width: 767px) {
-  .info1, .info2, .info3, .info4 {
-    flex: 0 0 100%; /* Cada sección ocupa el 100% del ancho en pantallas más pequeñas */
-  }
+.text-overlay h1,
+.text-overlay p {
+  margin: 0;
 }
 
-@media (max-width: 1024px) {
-  .flex-container {
-    flex-direction: column-reverse; /* Cambiar la dirección del contenedor a columna inversa */
-  }
+.activities-section{
+  color: black;
+}
 
-  .text-content {
-    padding: 20px; /* Agregar un espaciado uniforme alrededor del contenido de texto en móviles */
-  }
+.activities-title {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 70px; /* Establece la altura del div */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: xx-large;
+  font-weight: bold;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+h1 {
+  text-align: center; /* Centra el texto horizontalmente dentro del h1 */
 }
