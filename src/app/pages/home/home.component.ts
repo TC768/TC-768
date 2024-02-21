@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   news$!: Observable<INews[]>;
   erroMessage: string = "";
 
-  coverImage = "../../../assets/Tc768Teamcover.jpg";
+  coverImage = "../../../assets/imagen1.jpg";
 
 
   constructor(private service: ApiService, private router: Router) { }
