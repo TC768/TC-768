@@ -23,10 +23,9 @@
 }
 
 .text-overlay {
-  position: absolute;
   top: 0;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: var(--color-secondary);
   color: white;
   width: 100%; /* Ajusta el ancho del área de texto según sea necesario */
   font-size: 2.5em;
@@ -36,14 +35,14 @@
 
 .text-overlay h1,
 .text-overlay p {
-  margin: 0;
+  margin: 10px;
 }
 
 .activities-section{
   color: black;
 }
 
-.activities-title {
+.section-title {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
@@ -57,4 +56,16 @@
 
 h1 {
   text-align: center; /* Centra el texto horizontalmente dentro del h1 */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* O cualquier otra alineación que desees */
+}
+
+@media screen and (max-width: 768px) {
+  .text-overlay {
+    font-size: 3.5vw; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
 }

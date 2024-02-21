@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Activity } from '../../interfaces/IActivity';
 
 @Component({
   selector: 'app-card',
@@ -9,9 +10,25 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent {
 
-  @Input() title: string = '';
-  @Input() icon: string = '';
-  @Input() description: string = '';
+  @Input()
+  card!: Activity | {
+    image: 'imagen1.jpg';
+    description: 'Activity 1';
+    information: 'Information about activity 1';
+  };
+  @Output() showDetailsChange = new EventEmitter<boolean>();
+
+  showDetails = false;
 
   constructor() { }
+
+  showModal(): void {
+    this.showDetails = true;
+    this.showDetailsChange.emit(this.showDetails);
+  }
+
+  closeModal(): void {
+    this.showDetails = false;
+    this.showDetailsChange.emit(this.showDetails);
+  }
 }

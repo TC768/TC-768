@@ -1,33 +1,33 @@
 <div class="main-section">
-  <section class="image-section">
+  <div class="image-section">
     <div class="image-container">
       <div class="text-overlay">
         <h1>Bienvedos al TC-768</h1>
         <p>Fortalecimiento del Sector Empresarial del Cantón de Turrialba: Gestionando tu Empresa.</p>
       </div>
-      <img src="../../../assets/Tc768Teamcover.jpg" alt="Company Image" class="image-cover">
+      <img src="{{coverImage}}" alt="Company Image" class="image-cover">
     </div>
-  </section>
-
+  </div>
   <!-- Activities Section -->
-  <section class="activities-section">
-    <div class="activities-title">
+  <div class="activities-section">
+    <div class="section-title">
       <h2>Actividades</h2>
     </div>
-    <ul>
-      <li>Activity 1</li>
-      <li>Activity 2</li>
-      <li>Activity 3</li>
-    </ul>
-  </section>
-
+    <div class="card-container">
+      @for (activity of activities; track $index) {
+      <app-card [card]="activity" (showDetailsChange)="onDetailsChange($event)"></app-card>
+      }
+    </div>
+  </div>
   <!-- News Section -->
-  <section class="news-section">
-    <h2>News</h2>
-    <ul>
-      <li>News 1</li>
-      <li>News 2</li>
-      <li>News 3</li>
-    </ul>
-  </section>
+  <div class="news-section">
+    <div class="section-title">
+      <h1>Noticias</h1>
+    </div>
+    <div class="card-container">
+      @for (activity of activities; track $index) {
+      <app-card [card]="activity" (showDetailsChange)="onDetailsChange($event)"></app-card>
+      }
+    </div>
+  </div>
 </div>

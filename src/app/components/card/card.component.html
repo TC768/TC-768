@@ -1,8 +1,16 @@
-<div class="card">
-    <img class="card-img-top" src="../../../assets/{{icon}}" alt="Icono">
-    <div class="card-body">
-      <h5 class="card-title">{{title}}</h5>
-      <p class="card-text">{{description}}</p>
-    </div>
+<div class="card-container">
+  <img src="{{card.image}}" alt="{{card.description}}">
+  <p>{{card.description}}</p>
+  <button (click)="showModal()">Ver más</button>
+</div>
+
+@if (showDetails) {
+<div class="modal">
+  <div class="modal-content">
+    <img src="{{card.image}}" alt="{{card.description}}">
+    <h2>{{card.description}}</h2>
+    <p>{{card.information}}</p>
+    <button (click)="closeModal()">Cerrar</button>
   </div>
-  
+</div>
+}
