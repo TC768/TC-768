@@ -84,6 +84,7 @@
 
   .navbar.active-navbar .navbar-links {
     display: flex;
+    z-index: 9999;
   }
 
   .navbar-hamburger {

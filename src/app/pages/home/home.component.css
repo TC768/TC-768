@@ -1,0 +1,71 @@
+:host {
+  width: 100%;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-section {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  top: 0;
+  padding: 20px;
+  background-color: var(--color-secondary);
+  color: white;
+  width: 100%; /* Ajusta el ancho del área de texto según sea necesario */
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-overlay h1,
+.text-overlay p {
+  margin: 10px;
+}
+
+.activities-section{
+  color: black;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 70px; /* Establece la altura del div */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: xx-large;
+  font-weight: bold;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+h1 {
+  text-align: center; /* Centra el texto horizontalmente dentro del h1 */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* O cualquier otra alineación que desees */
+}
+
+@media screen and (max-width: 768px) {
+  .text-overlay {
+    font-size: 3.5vw; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+}
