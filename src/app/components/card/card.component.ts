@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Activity } from '../../interfaces/IActivity';
+import { IActivity } from '../../interfaces/IActivity';
 
 @Component({
   selector: 'app-card',
@@ -11,7 +11,7 @@ import { Activity } from '../../interfaces/IActivity';
 export class CardComponent {
 
   @Input()
-  card!: Activity | {
+  card!: IActivity | {
     image: 'imagen1.jpg';
     description: 'Activity 1';
     information: 'Information about activity 1';

@@ -30,5 +30,39 @@
         "https://source.unsplash.com/78A265wPiO4"
       ]
     }
+  ],
+  "actividades": [
+    {
+      "id": 1,
+      "image": "https://img.freepik.com/vector-gratis/diseno-pagina-destino-retro-diseno-plano_23-2149969065.jpg?w=2000&t=st=1708477903~exp=1708478503~hmac=5e6d0438d92949266ad457e6639d66512f127eb91c7ff1b0fb6b8c0b1e41f4c9",
+      "description": "Esta es una actividad de prueba",
+      "information": "Esta es la informacion de la actividad de prueba"
+    },
+    {
+      "id": 2,
+      "image": "https://source.unsplash.com/78A265wPiO4",
+      "description": "Esta es una actividad de prueba",
+      "information": "Esta es la informacion de la actividad de prueba"
+    }
+  ],
+  "noticias": [
+    {
+      "id": 1,
+      "image": "https://img.freepik.com/foto-gratis/fondo-programacion-texto-html_23-2150040414.jpg?size=626&ext=jpg&ga=GA1.1.2054507150.1708477895&semt=ais",
+      "description": "Noticia 1",
+      "information": "Esta es una noticia de prueba"
+    },
+    {
+      "id": 2,
+      "image": "https://source.unsplash.com/78A265wPiO4",
+      "description": "Noticia 2",
+      "information": "Esta es una noticia de prueba"
+    },
+    {
+      "id": 3,
+      "image": "https://source.unsplash.com/78A265wPiO4",
+      "description": "Noticia 3",
+      "information": "Esta es una noticia de prueba"
+    }
   ]
 }
