@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
-import { Resend } from 'resend';
+//import { Resend } from 'resend';
 import {CommonModule} from '@angular/common';
 
 import Swal from 'sweetalert2'
@@ -20,7 +20,7 @@ export class ContactComponent {
 
   form: FormGroup;
 
-  private resend = new Resend('re_eBXkB2Hs_4H3Pb4pVLmkVtNHooEur9aSo');
+  //private resend = new Resend('re_eBXkB2Hs_4H3Pb4pVLmkVtNHooEur9aSo');
 
 // private resend = new Resend('d2cf9f60-e878-42b1-b24c-1434624a0e7f');
 
