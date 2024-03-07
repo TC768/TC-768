@@ -1,0 +1,37 @@
+<div class="main-section">
+  <div class="image-section">
+    <div class="image-container">
+      <div class="text-overlay">
+        <h1>Bienvedos al TC-768</h1>
+        <p>Fortalecimiento del Sector Empresarial del Cantón de Turrialba: Gestionando tu Empresa.</p>
+      </div>
+      <img src="{{coverImage}}" alt="TC Image" class="image-cover">
+    </div>
+  </div>
+  <!-- Activities Section -->
+  <div class="activities-section">
+    <div class="section-title">
+      <h2>Actividades</h2>
+    </div>
+    <div class="card-container">
+      @if (activities$ | async; as resultObject) {
+        @for (activity of resultObject; track $index) {
+          <app-card [card]="activity" (showDetailsChange)="onDetailsChange($event)"></app-card>
+          }
+      }
+    </div>
+  </div>
+  <!-- News Section -->
+  <div class="news-section">
+    <div class="section-title">
+      <h1>Noticias</h1>
+    </div>
+    <div class="card-container">
+      @if (news$ | async; as resultObject) {
+        @for (itemNews of resultObject; track $index) {
+          <app-card [card]="itemNews" (showDetailsChange)="onDetailsChange($event)"></app-card>
+          }
+      }    
+    </div>
+  </div>
+</div>
