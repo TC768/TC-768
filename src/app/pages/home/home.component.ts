@@ -19,20 +19,15 @@ import { INews } from '../../interfaces/INews';
 export class HomeComponent implements OnInit {
 
   activities$!: Observable<IActivity[]>;
-  news$!: Observable<INews[]>;
   erroMessage: string = "";
 
-  coverImage = "../../../assets/imagen1.jpg";
+  coverImage = "../../../assets/home.webp";
 
 
   constructor(private service: ApiService, private router: Router) { }
 
   ngOnInit(): void {
     this.activities$ = this.service.getActivities().pipe(catchError((error: string) => {
-      this.erroMessage = error;
-      return EMPTY;
-    }));
-    this.news$ = this.service.getNews().pipe(catchError((error: string) => {
       this.erroMessage = error;
       return EMPTY;
     }));
