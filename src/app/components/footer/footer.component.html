@@ -1,32 +1,38 @@
 <footer class="footer">
   <div class="footer__content">
     <div class="footer__social">
-      <img class="footer__logo" src="assets/logo01.png" alt="Icono">
-      <h3 class="footer__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minima, consectetur beatae
-        accusantium error tenetur ex</h3>
+      <img class="footer__logo" src="assets/logo.webp" alt="Icono">
+      <h3 class="footer__title">Dotando herramientas para la gestión de tu negocio</h3>
     </div>
 
     <div class="footer__explore">
       <h1 class="footer__explore-title">Explorar</h1>
-      <a href="" class="footer__link">Inicio</a>
-      <a href="" class="footer__link">Sobre nosotros</a>
-      <a href="" class="footer__link">Servicios</a>
+      <a routerLink="/home" routerLinkActive="active-link">Inicio</a>
+      <a routerLink="/aboutUs" routerLinkActive="active-link" >Sobre
+        nosotros</a>
+      <a routerLink="/contact" class="footer__link">Contacto</a>
     </div>
 
     <div class="footer__contact">
       <h1 class="footer__contact-title">Contactos</h1>
-      <p class="footer__contact-email">TCU&#64;gmail.com</p>
-      <p class="footer__contact-phone">+506 8888-9999</p>
+      <p class="footer__contact-email">tcu768web&#64;gmail.com</p>
+      <p class="footer__contact-phone">2511 9228</p>
       <p class="footer__contact-address">Frente a los tribunales de justicia Turrialba</p>
     </div>
   </div>
 
   <div class="footer__info">
-    <p class="footer__copyright">Company name &copy; 2024</p>
+    <p class="footer__copyright">Company name &copy; {{year}}</p>
     <div class="footer__social-icons">
-      <i class="bi bi-facebook footer__icon"></i>
-      <i class="bi bi-twitter-x footer__icon"></i>
-      <i class="bi bi-instagram footer__icon"></i>
+      <a href="https://www.facebook.com/profile.php?id=100082053260381" target="_blank">
+        <i class="bi bi-facebook footer__icon"></i>
+      </a>
+
+      <a href="https://www.instagram.com/tc768_gestionando_tu_empresa/" target="_blank">
+        <i class="bi bi-instagram footer__icon"></i>
+      </a>
+
+
     </div>
   </div>
 </footer>
