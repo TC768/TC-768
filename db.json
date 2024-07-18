@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Talleres a indigines de Turrialba",
       "description": "En este taller se les dieron a las indigenes diferentes herraminetas para que puedan aprender sobre el uso de la tecnología y la gestion de un negocio.",
-      "date": "1/23/2024",
+      "date": "2022-2023-2024",
       "url": [
         "assets/TALLERINDIGENAS/3.webp",
         "assets/TALLERINDIGENAS/2.webp",
@@ -13,22 +13,24 @@
     },
     {
       "id": 2,
-      "name": "Proyecto 2",
-      "description": "Este es un proyecto de prueba",
-      "date": "1/23/2024",
+      "name": "Taller de primeros auxilios",
+      "description": "En este taller se les dieron a las diferentes personas herraminestas y conocimientos para que usar uso de estos en situaciones necesarias",
+      "date": "2024",
       "url": [
-        "https://images.unsplash.com/photo-1512641406448-6574e777bec6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://source.unsplash.com/78A265wPiO4"
+        "assets/TALLERPRIMEROSAUXILIOS/2.webp",
+        "assets/TALLERPRIMEROSAUXILIOS/3.webp",
+        "assets/TALLERPRIMEROSAUXILIOS/1.webp"
       ]
     },
     {
       "id": 3,
-      "name": "Proyecto 3",
+      "name": "Taller de emprendimiento en sitio mata",
       "description": "Este es un proyecto de prueba",
-      "date": "1/23/2024",
-      "url": [
-        "https://images.unsplash.com/photo-1512641406448-6574e777bec6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://source.unsplash.com/78A265wPiO4"
+      "date": "2023",
+     "url": [
+        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/1.webp",
+        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/3.webp",
+        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/2.webp"
       ]
     }
   ],
