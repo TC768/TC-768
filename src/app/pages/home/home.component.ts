@@ -21,9 +21,6 @@ export class HomeComponent implements OnInit {
   activities$!: Observable<IActivity[]>;
   erroMessage: string = "";
 
-  coverImage = "assets/home.webp";
-
-
   constructor(private service: ApiService, private router: Router) { }
 
   ngOnInit(): void {
