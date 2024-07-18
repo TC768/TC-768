@@ -2,8 +2,8 @@
   "proyectos": [
     {
       "id": 1,
-      "name": "Talleres a indigines de Turrialba",
-      "description": "En este taller se les dieron a las indigenes diferentes herraminetas para que puedan aprender sobre el uso de la tecnología y la gestion de un negocio.",
+      "name": "Talleres a indígenas de Turrialba",
+      "description": "En este taller se les dieron a las indígenas diferentes herramientas para que puedan aprender sobre el uso de la tecnología y la gestión de un negocio.",
       "date": "2022-2023-2024",
       "url": [
         "assets/TALLERINDIGENAS/3.webp",
@@ -14,7 +14,7 @@
     {
       "id": 2,
       "name": "Taller de primeros auxilios",
-      "description": "En este taller se les dieron a las diferentes personas herraminestas y conocimientos para que usar uso de estos en situaciones necesarias",
+      "description": "En este taller se les dieron a las diferentes personas herramientas y conocimientos para que usen estos en situaciones necesarias",
       "date": "2024",
       "url": [
         "assets/TALLERPRIMEROSAUXILIOS/2.webp",
@@ -25,7 +25,7 @@
     {
       "id": 3,
       "name": "Taller de emprendimiento en sitio mata",
-      "description": "Este es un proyecto de prueba",
+      "description": "No se",
       "date": "2023",
      "url": [
         "assets/TALLEREMPRENDIMIENTOSSITIOMATA/1.webp",
@@ -37,13 +37,13 @@
     "actividades": [
     {
       "id": 1,
-      "image": "https://img.freepik.com/vector-gratis/diseno-pagina-destino-retro-diseno-plano_23-2149969065.jpg?w=2000&t=st=1708477903~exp=1708478503~hmac=5e6d0438d92949266ad457e6639d66512f127eb91c7ff1b0fb6b8c0b1e41f4c9",
+      "image": "assets/TALLERINDIGENAS/2.webp",
       "description": "Taller de empoderamiento",
       "information": "El objetivo de este taller es suministrar herramientas para empoderar al grupo de mujeres y fomentar su desarrollo personal."
     },
     {
       "id": 2,
-      "image": "https://source.unsplash.com/78A265wPiO4",
+      "image": "assets/TALLERINDIGENAS/4.webp",
       "description": "Taller de uso básico de computadoras",
       "information": "El objetivo de este taller es que las mujeres indígenas aprendan sobre el uso del computador y cómo usar herramientas básicas en el negocio, así como la gestión del negocio y diseño de presentaciones para su promoción del producto"
     },
@@ -51,7 +51,7 @@
       "id": 3,
       "image": "https://fundacionarchivoalburquerque.org/wp-content/uploads/2024/01/proximamente.png",
       "description": "Próximamente",
-      "information": "Próximamente6"
+      "information": "Próximamente"
     }
   ]
 }
