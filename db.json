@@ -2,12 +2,13 @@
   "proyectos": [
     {
       "id": 1,
-      "name": "Proyecto 1",
-      "description": "Este es un proyecto de prueba",
+      "name": "Talleres a indigines de Turrialba",
+      "description": "En este taller se les dieron a las indigenes diferentes herraminetas para que puedan aprender sobre el uso de la tecnología y la gestion de un negocio.",
       "date": "1/23/2024",
       "url": [
-        "https://source.unsplash.com/78A265wPiO4",
-        "https://images.unsplash.com/photo-1512641406448-6574e777bec6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "assets/TALLER INDIGENAS/3.webp",
+        "assets/TALLER INDIGENAS/2.webp",
+        "assets/TALLER INDIGENAS/1.webp"
       ]
     },
     {
