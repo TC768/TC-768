@@ -8,6 +8,10 @@
   text-align: center;
   transition: all 0.3s ease-in-out;
   color: black;
+  height: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card-container:hover {

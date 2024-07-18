@@ -1,7 +1,9 @@
 <div class="card-container">
   <img src="{{card.image}}" alt="{{card.description}}">
-  <p>{{card.description}}</p>
-  <button (click)="showModal()">Ver más</button>
+  <div>
+    <p>{{card.description}}</p>
+    <button (click)="showModal()">Ver más</button>
+  </div>
 </div>
 
 @if (showDetails) {
