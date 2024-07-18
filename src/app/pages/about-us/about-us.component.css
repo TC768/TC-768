@@ -40,6 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 5rem;
 }
 
 .about__content {
