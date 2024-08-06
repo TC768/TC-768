@@ -32,28 +32,6 @@
         "assets/TALLEREMPRENDIMIENTOSSITIOMATA/3.webp",
         "assets/TALLEREMPRENDIMIENTOSSITIOMATA/2.webp"
       ]
-    },
-    {
-      "id": 4,
-      "name": "Taller de emprendimiento en sitio mata",
-      "description": "En este taller se le dotó a las emprendedoras de herramientas y habilidades para implementar en sus negocios",
-      "date": "2023",
-      "url": [
-        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/1.webp",
-        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/3.webp",
-        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/2.webp"
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Taller de emprendimiento en sitio mata",
-      "description": "En este taller se le dotó a las emprendedoras de herramientas y habilidades para implementar en sus negocios",
-      "date": "2023",
-      "url": [
-        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/1.webp",
-        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/3.webp",
-        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/2.webp"
-      ]
     }
   ],
   "actividades": [
@@ -68,12 +46,6 @@
       "image": "assets/TALLERINDIGENAS/4.webp",
       "description": "Taller de uso básico de computadoras",
       "information": "El objetivo de este taller es que las mujeres indígenas aprendan sobre el uso del computador y cómo usar herramientas básicas en el negocio, así como la gestión del negocio y diseño de presentaciones para su promoción del producto"
-    },
-    {
-      "id": 3,
-      "image": "https://fundacionarchivoalburquerque.org/wp-content/uploads/2024/01/proximamente.png",
-      "description": "Próximamente",
-      "information": "Próximamente"
     },
     {
       "id": 3,
