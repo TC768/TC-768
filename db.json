@@ -32,6 +32,18 @@
         "assets/TALLEREMPRENDIMIENTOSSITIOMATA/3.webp",
         "assets/TALLEREMPRENDIMIENTOSSITIOMATA/2.webp"
       ]
+    },
+    {
+      "id": 4,
+      "name": "Prueba",
+      "description": "Prueba",
+      "date": "2023",
+     "url": [
+       "assets/TALLEREMPRENDIMIENTOSSITIOMATA/imagen.webp",
+        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/1.webp",
+        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/3.webp",
+        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/2.webp"
+      ]
     }
   ],
     "actividades": [
