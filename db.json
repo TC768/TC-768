@@ -32,6 +32,17 @@
         "assets/TALLEREMPRENDIMIENTOSSITIOMATA/3.webp",
         "assets/TALLEREMPRENDIMIENTOSSITIOMATA/2.webp"
       ]
+    },
+    {
+      "id": 3,
+      "name": "Prueba",
+      "description": "En este taller se le dotó a las emprendedoras de herramientas y habilidades para implementar en sus negocios",
+      "date": "2023",
+      "url": [
+        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/1.webp",
+        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/3.webp",
+        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/2.webp"
+      ]
     }
   ],
   "actividades": [
