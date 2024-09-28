@@ -6,9 +6,7 @@
       "description": "En este taller se les dieron a las indígenas diferentes herramientas para que puedan aprender sobre el uso de la tecnología y la gestión de un negocio.",
       "date": "2022-2023-2024",
       "url": [
-        "assets/TALLERINDIGENAS/3.webp",
-        "assets/TALLERINDIGENAS/2.webp",
-        "assets/TALLERINDIGENAS/1.webp"
+        "assets/TALLERINDIGENAS/3.webp"
       ]
     },
     {
@@ -17,9 +15,8 @@
       "description": "En este taller se les dieron a las diferentes personas herramientas y conocimientos para que usen estos en situaciones necesarias",
       "date": "2024",
       "url": [
-        "assets/TALLERPRIMEROSAUXILIOS/2.webp",
-        "assets/TALLERPRIMEROSAUXILIOS/3.webp",
-        "assets/TALLERPRIMEROSAUXILIOS/1.webp"
+        "assets/TALLERPRIMEROSAUXILIOS/2.webp"
+        
       ]
     },
     {
@@ -28,9 +25,8 @@
       "description": "En este taller se le dotó a las emprendedoras de herramientas y habilidades para implementar en sus negocios",
       "date": "2023",
       "url": [
-        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/1.webp",
-        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/3.webp",
-        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/2.webp"
+        "assets/TALLEREMPRENDIMIENTOSSITIOMATA/1.webp"
+       
       ]
     },
   ],
